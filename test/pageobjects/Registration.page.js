@@ -47,6 +47,10 @@ class RegistrationPage extends Page {
         return $("//div[@class='contact-form__error']//child::span[2]");
     }
 
+    get invalidMsg() {
+        return $("//span[contains(text(),'Please include')]");
+    }
+
     /**
      * a method to encapsule automation code to interact with the page
      */
